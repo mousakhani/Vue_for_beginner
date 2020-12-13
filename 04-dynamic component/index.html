@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>example1</title>
+    <link href="../0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../0/css/main.css">
+</head>
+<body>
+<div class="container">
+    <div id="dynamic_component">
+        <a href="#" v-on:click="component_change">Click me</a>
+        <component v-bind:is="view"></component>
+    </div>
+
+</div>
+
+
+<script src="../0/js/vue.js"></script>
+<script src="dynamic_component.js"></script>
+</body>
+</html>
