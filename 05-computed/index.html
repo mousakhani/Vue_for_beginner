@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>example1</title>
+    <link href="../0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../0/css/main.css">
+</head>
+<body style="direction: rtl;">
+<div class="container">
+    <div id="computed">
+        First name:
+        <input type="text" v-model="firstname"><br/>
+        Last name:
+        <input type="text" v-model="lastname"><br/>
+
+        <input type="text" v-model="getfullname"><br/>
+
+        firstname: {{firstname}}<br/>
+        lastname: {{lastname}}<br/>
+
+    </div>
+</div>
+
+
+<script src="../0/js/vue.js"></script>
+<script src="computed.js"></script>
+</body>
+</html>
