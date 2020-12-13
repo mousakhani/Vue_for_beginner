@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>example1</title>
+    <link href="../0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../0/css/main.css">
+</head>
+<body style="direction: rtl;">
+<div class="container">
+    <div id="watch">
+        Kilometer:
+        <input type="text" v-model="kilometer"><br/>
+        Meter:
+        <input type="text" v-model="meter" v-bind:class="[isactive ? text-danger:text-info]">
+    </div>
+</div>
+
+
+<script src="../0/js/vue.js"></script>
+<script src="watch.js"></script>
+</body>
+</html>
