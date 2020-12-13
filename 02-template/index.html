@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>example1</title>
+    <link href="../0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../0/css/main.css">
+</head>
+<body>
+<div class="container">
+    <div id="template">
+        <div class="container">
+            First name: {{firstname}}<br/>
+            Last name: {{lastname}}<br/>
+        </div>
+        <!--        خط زیر خطا دارد     -->
+        <div v-html="htmlcontent"></div>
+    </div>
+
+</div>
+
+
+<script src="../0/js/vue.js"></script>
+<script src="template.js"></script>
+</body>
+</html>
