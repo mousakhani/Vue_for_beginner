@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>example1</title>
+    <link href="../0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../0/css/main.css">
+</head>
+<body style="direction: rtl;">
+<div class="container">
+    <div id="event1">
+        num1:
+        <input type="text" v-model="num1"><br/>
+        num2:
+        <input type="text" v-model="num2"><br/>
+        <ul class="list-unstyled">
+            <li><input type="button" @click="sum" value="sum"></li>
+            <li><input type="button" @click="sub" value="sub"></li>
+            <li><input type="button" @click="multi" value="multi"></li>
+            <li><input type="button" @click="div" value="div"></li>
+        </ul>
+        <br/>
+        Result: {{result}}
+    </div>
+    <hr color="black" style="height: 2px;"/>
+
+    <div id="event2">
+        <div v-bind:style="styleobj" v-on:mouseover="change_color" @mouseout="change_color"></div>
+
+
+    </div>
+
+</div>
+
+
+<script src="../0/js/vue.js"></script>
+<script src="events.js"></script>
+</body>
+</html>
